@@ -23,22 +23,23 @@ var SceneA = new Phaser.Class({
         console.log("Si")
     },
     preload: function(){
-        this.load.image("color", "/assets/background/plx-1.png");
-        this.load.image("back", "/assets/background/plx-5.png");
+
+        this.load.image("color", "./assets/background/plx-1.png");
+        this.load.image("back", "./assets/background/plx-5.png");
     
-        this.load.image("ground", "/assets/obstaculos/ground.png");
-        this.load.image("obst1", "/assets/obstaculos/obs-1.png");
-        this.load.image("obst2", "/assets/obstaculos/obs-2.png");
-        this.load.image("obst3", "/assets/obstaculos/obs-3.png");
-        this.load.image("obst4", "/assets/obstaculos/obs-4.png");
-        this.load.image("coin", "/assets/coin2.png");
+        this.load.image("ground", "./assets/obstaculos/ground.png");
+        this.load.image("obst1", "./assets/obstaculos/obs-1.png");
+        this.load.image("obst2", "./assets/obstaculos/obs-2.png");
+        this.load.image("obst3", "./assets/obstaculos/obs-3.png");
+        this.load.image("obst4", "./assets/obstaculos/obs-4.png");
+        this.load.image("coin", "./assets/coin2.png");
         this.load.spritesheet('dude', '/assets/Character/dude.png',
         { frameWidth: 21, frameHeight: 33 });
-        this.load.spritesheet('life', '/assets/life.png',
+        this.load.spritesheet('life', './assets/life.png',
         { frameWidth: 28, frameHeight: 7 });
-        this.load.spritesheet('enemy', '/assets/enemy.png',
+        this.load.spritesheet('enemy', './assets/enemy.png',
         { frameWidth: 80, frameHeight: 80 });
-        this.load.spritesheet('portal', '/assets/portal.png',
+        this.load.spritesheet('portal', './assets/portal.png',
         { frameWidth: 80, frameHeight: 80 });
     },
     create: function(){

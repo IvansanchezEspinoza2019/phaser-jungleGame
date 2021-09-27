@@ -24,22 +24,22 @@ var SceneA = new Phaser.Class({
     },
     preload: function(){
 
-        this.load.image("color", "./assets/background/plx-1.png");
-        this.load.image("back", "./assets/background/plx-5.png");
+        this.load.image("color", "phaser-jungleGame/assets/background/plx-1.png");
+        this.load.image("back", "phaser-jungleGame/assets/background/plx-5.png");
     
-        this.load.image("ground", "./assets/obstaculos/ground.png");
-        this.load.image("obst1", "./assets/obstaculos/obs-1.png");
-        this.load.image("obst2", "./assets/obstaculos/obs-2.png");
-        this.load.image("obst3", "./assets/obstaculos/obs-3.png");
-        this.load.image("obst4", "./assets/obstaculos/obs-4.png");
-        this.load.image("coin", "./assets/coin2.png");
-        this.load.spritesheet('dude', '/assets/Character/dude.png',
+        this.load.image("ground", "phaser-jungleGame/assets/obstaculos/ground.png");
+        this.load.image("obst1", "phaser-jungleGame/assets/obstaculos/obs-1.png");
+        this.load.image("obst2", "phaser-jungleGame/assets/obstaculos/obs-2.png");
+        this.load.image("obst3", "phaser-jungleGame/assets/obstaculos/obs-3.png");
+        this.load.image("obst4", "phaser-jungleGame/assets/obstaculos/obs-4.png");
+        this.load.image("coin", "phaser-jungleGame/assets/coin2.png");
+        this.load.spritesheet('dude', 'phaser-jungleGame/assets/Character/dude.png',
         { frameWidth: 21, frameHeight: 33 });
-        this.load.spritesheet('life', './assets/life.png',
+        this.load.spritesheet('life', 'phaser-jungleGame/assets/life.png',
         { frameWidth: 28, frameHeight: 7 });
-        this.load.spritesheet('enemy', './assets/enemy.png',
+        this.load.spritesheet('enemy', 'phaser-jungleGame/assets/enemy.png',
         { frameWidth: 80, frameHeight: 80 });
-        this.load.spritesheet('portal', './assets/portal.png',
+        this.load.spritesheet('portal', 'phaser-jungleGame/assets/portal.png',
         { frameWidth: 80, frameHeight: 80 });
     },
     create: function(){

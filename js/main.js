@@ -10,7 +10,7 @@ var vida = 60;
 var maxHeight = 500
 var maxWidth = 900
 
-
+var rootUrl ="https://ivansanchezespinoza2019.github.io/phaser-jungleGame/"
 var SceneA = new Phaser.Class({
 
     Extends: Phaser.Scene,
@@ -24,22 +24,22 @@ var SceneA = new Phaser.Class({
     },
     preload: function(){
 
-        this.load.image("color", "phaser-jungleGame/assets/background/plx-1.png");
-        this.load.image("back", "phaser-jungleGame/assets/background/plx-5.png");
+        this.load.image("color", rootUrl+"assets/background/plx-1.png");
+        this.load.image("back", rootUrl+"assets/background/plx-5.png");
     
-        this.load.image("ground", "phaser-jungleGame/assets/obstaculos/ground.png");
-        this.load.image("obst1", "phaser-jungleGame/assets/obstaculos/obs-1.png");
-        this.load.image("obst2", "phaser-jungleGame/assets/obstaculos/obs-2.png");
-        this.load.image("obst3", "phaser-jungleGame/assets/obstaculos/obs-3.png");
-        this.load.image("obst4", "phaser-jungleGame/assets/obstaculos/obs-4.png");
-        this.load.image("coin", "phaser-jungleGame/assets/coin2.png");
-        this.load.spritesheet('dude', 'phaser-jungleGame/assets/Character/dude.png',
+        this.load.image("ground", rootUrl+"assets/obstaculos/ground.png");
+        this.load.image("obst1", rootUrl+"assets/obstaculos/obs-1.png");
+        this.load.image("obst2", rootUrl+"assets/obstaculos/obs-2.png");
+        this.load.image("obst3", rootUrl+"assets/obstaculos/obs-3.png");
+        this.load.image("obst4", rootUrl+"assets/obstaculos/obs-4.png");
+        this.load.image("coin", rootUrl+"assets/coin2.png");
+        this.load.spritesheet('dude', rootUrl+"assets/Character/dude.png",
         { frameWidth: 21, frameHeight: 33 });
-        this.load.spritesheet('life', 'phaser-jungleGame/assets/life.png',
+        this.load.spritesheet('life', rootUrl+"assets/life.png",
         { frameWidth: 28, frameHeight: 7 });
-        this.load.spritesheet('enemy', 'phaser-jungleGame/assets/enemy.png',
+        this.load.spritesheet('enemy', rootUrl+"assets/enemy.png",
         { frameWidth: 80, frameHeight: 80 });
-        this.load.spritesheet('portal', 'phaser-jungleGame/assets/portal.png',
+        this.load.spritesheet('portal', rootUrl+"assets/portal.png",
         { frameWidth: 80, frameHeight: 80 });
     },
     create: function(){

@@ -12,9 +12,11 @@ var maxWidth = 900
 
 
 var SceneA = new Phaser.Class({
+
     Extends: Phaser.Scene,
     initialize:  
     function SceneA(){
+
         Phaser.Scene.call(this, { key: 'sceneA' });
     },
     restart: function(){
